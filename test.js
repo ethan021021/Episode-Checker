@@ -27,7 +27,7 @@ app.get("/bachelor", function(req, res){
   xtorrent.search({query:"Bachelor in paradise"}).then(function (data) {
       var resultArray = new Array();
       for (d in data) {
-          if (data[d].title.includes("E12") == true) {
+          if (data[d].title.includes("E11") == true) {
             resultArray.push(" " + data[d].title);
           }
       }
