@@ -6,7 +6,7 @@ app.get("/bachelor", function(req, res){
   xtorrent.search({query:"Bachelor in paradise"}).then(function (data) {
       var resultArray = new Array();
       for (d in data) {
-          if (data[d].title.includes("E11") == true) {
+          if (data[d].title.includes("E12") == true) {
             resultArray.push(" " + data[d].title);
           }
       }
@@ -23,6 +23,6 @@ app.get("/bachelor", function(req, res){
   });
 });
 
-app.listen(80, function(){
+app.listen(3000, function(){
   console.log("Started!")
 });
