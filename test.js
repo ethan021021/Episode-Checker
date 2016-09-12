@@ -6,7 +6,7 @@ app.get("/robot", function(req, res){
   xtorrent.search({query:"Mr robot"}).then(function (data) {
       var resultArray = new Array();
       for (d in data) {
-          if (data[d].title.includes("E10") == true) {
+          if (data[d].title.includes("E11") == true) {
             resultArray.push(" " + data[d].title);
           }
       }
